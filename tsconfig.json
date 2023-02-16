@@ -1,4 +1,4 @@
-{   "include": ["src", "src/custom.d.ts"],
+{   "include": ["src", "src/types/image.d.ts"],
     "compilerOptions": {
         "typeRoots" : ["./node_modules/@types", "src/@types"],
         "outDir": "./dist/",
