@@ -16,6 +16,7 @@ const config = {
       filename: 'index.html',
     })
   ],
+  devtool: "source-map",
   module: {
     rules: [
       {
@@ -32,19 +33,12 @@ const config = {
         test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader'
-        ],
-        exclude: /\.module\.css$/
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
           {
             loader: 'css-loader',
             options: {
               importLoaders: 1,
-              modules: true
+              modules: true,
+              sourceMap: true
             }
           }
         ],
@@ -52,22 +46,30 @@ const config = {
       },
       {
         test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
+         use: [
+           'style-loader',
+           {loader: 'css-loader',
+           options: {
+             sourceMap: true
+           }
+         },
+           {loader: 'resolve-url-loader',
+           options: {
+             sourceMap: true
+           }
+         }, 
+           {
+             loader: 'sass-loader',
+             options: {
+               sourceMap: true
+             }
+           }
+         ]
+  
       },
       {
-        test: /\.png$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              mimetype: 'image/png'
-            }
-          }
-        ]
+        test: /\.(png|jpe?g|gif)$/i,
+        use: 'url-loader'
       },
       {
         test: /\.svg$/,
