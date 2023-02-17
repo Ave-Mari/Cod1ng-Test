@@ -2,20 +2,30 @@ section {
     position: relative;
     .login {
         position: absolute;
-        color: rgb(0, 0, 0);
-        padding: 4px;
-        background: #fff;
+        padding: 4px; 
         left: 88%;
+        color: #fff;
+        text-decoration: none;
+
+        // margin-top: 210px;
         
     }
     .signin {
         position: absolute;
-        color: rgb(0, 0, 0);
         padding: 4px;
-        background: #fff;
         top: 10%;
         left: 88%;
+        color: #fff;
+        text-decoration: none;
+
+        // margin-top: 276px;
         
+    }
+
+    .active {
+        background: #fff;
+        color: rgb(0, 0, 0);
+        border-radius: 20px 0px 0px 20px;
     }
 }
 
