@@ -15,8 +15,8 @@ form {
 
     button {
         padding: 12px 105px;
+        margin-bottom: 36px;
         border-radius: 10px;
-        margin-right: 16px;
         background: #0093D3;
         border: none;
         color: #fff;
@@ -27,7 +27,6 @@ form {
 
     a {
         color: #1E1E1E;
-        font-weight: 400;
         font-size: 14px;
     }
 }
@@ -46,6 +45,7 @@ form {
     input {
         background: none;
         border: none;
+        width: 100%;
     }
 
     input:focus {
@@ -78,4 +78,18 @@ form {
 
 .checkbox-input {
     user-select: none;
+    font-size: 14px;
+   
+    margin-bottom: 40px;
+
+    input {
+        accent-color: #0093D3;
+        margin-right: 16px;
+
+        transform: scale(1.2);
+        -ms-transform: scale(1.2); 
+        -moz-transform: scale(1.2); 
+        -webkit-transform: scale(1.2);   
+        -o-transform: scale(1.2)
+    }
 }
