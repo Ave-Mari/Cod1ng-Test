@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link, Outlet } from "react-router-dom";
+import { NavLink , Outlet, Route } from "react-router-dom";
 //styles
 import './Layout.scss'
 import './../../main.scss'
@@ -11,9 +11,11 @@ export const Layout: React.FC = () => {
   return (
     <section className='layout'>
       <img src={layoutPic} alt="background"/>
-        <Link className='login' to='/login'>Inicia sesión</Link>
-        <Link className='signin' to='/signin'>¿Aún no tienes cuenta?</Link>
+        <NavLink activeStyle={{ color: "blue" }} className='login' to='/login'>Inicia sesión</NavLink >
+        <NavLink activeStyle={{ color: "blue" }} className='signin' to='/signin'>¿Aún no tienes cuenta?</NavLink >
     </section>
   )
 }
+
+'https://reactrouter.com/en/main/components/nav-link'
 
