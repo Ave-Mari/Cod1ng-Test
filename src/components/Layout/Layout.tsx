@@ -11,8 +11,8 @@ export const Layout: React.FC = () => {
   return (
     <section className='layout'>
       <img src={layoutPic} alt="background"/>
-        <NavLink activeStyle={{ color: "blue" }} className='login' to='/login'>Inicia sesión</NavLink >
-        <NavLink activeStyle={{ color: "blue" }} className='signin' to='/signin'>¿Aún no tienes cuenta?</NavLink >
+        <NavLink className='login' to='/login'>Inicia sesión</NavLink >
+        <NavLink className='signin' to='/signin'>¿Aún no tienes cuenta?</NavLink >
     </section>
   )
 }
