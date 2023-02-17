@@ -15,7 +15,7 @@ type Prop = {
 export const Form: React.FC<Prop> = ({ headline, button, link }) => {
   return (
     <form>
-        <img src={logo} alt="subastatucasa logo" />
+        <img src={logo} alt="subastatucasa logo" className='page-logo'/>
         <h1>{headline}</h1>
         <label className='text-input'>
             <img src={mail} className='mail-svg'/>
