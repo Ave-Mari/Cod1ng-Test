@@ -3,7 +3,12 @@ import {Form} from './../Form/Form'
 
 export const SignIn: React.FC = () => {
   return (
-    <section><Form title='signin'/></section>
+    <section>
+      <Form 
+        headline='Creatu cuenta'
+        button="Crear cuenta"
+    />
+    </section>
   )
 }
 
