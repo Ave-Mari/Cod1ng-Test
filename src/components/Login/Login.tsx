@@ -7,6 +7,8 @@ export const Login: React.FC = () => {
       <Form 
         headline='Inicia sesión'
         button="Iniciar sesión"
+        link="Olvidé mi contraseña"
+
     />
       </section>
   )
