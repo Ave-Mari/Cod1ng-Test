@@ -1,8 +1,9 @@
-import * as React from 'react';
+import * as React from 'react'
+import {Form} from './../Form/Form'
 
 export const Login: React.FC = () => {
   return (
-    <div>Login</div>
+    <section><Form title='login'/></section>
   )
 }
 
