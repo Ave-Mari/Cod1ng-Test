@@ -13,8 +13,6 @@ export const Layout: React.FC = () => {
       <img src={layoutPic} alt="background"/>
         <Link className='login' to='/login'>Inicia sesión</Link>
         <Link className='signin' to='/signin'>¿Aún no tienes cuenta?</Link>
-<Outlet />
-
     </section>
   )
 }
