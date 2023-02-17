@@ -1,19 +1,32 @@
 import * as React from 'react';
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import { Routes, Route, Outlet, BrowserRouter } from "react-router-dom";
 //components
 import { Layout } from './components/Layout/Layout'
 import { Login } from './components/Login/Login'
-import { SighIn }  from './components/SighIn/SighIn'
+import { SignIn }  from './components/SignIn/SignIn'
 
 export const App: React.FC = () => {
   return (
-    <BrowserRouter>
+  
+
+
+
+    <main>
         <Routes>
-            <Route path='/' element={<Layout />} />
-            <Route path='/login' element={<Login />} />
-            <Route path='/sighin' element={<SighIn />} />
+
+        <Route path='/' element={
+        <div className='wrapper'>
+        <Layout /> 
+        <Outlet />
+        </div>
+        }>
+            <Route path='login' element={<Login />} />
+            <Route path='signin' element={<SignIn />} />
+            </Route>
         </Routes>
-    </BrowserRouter>
+
+        </main>
+     
   )
 }
 
