@@ -1,4 +1,12 @@
 .signin-section {
     padding-top: 120px;
     padding-left: 130px;
+
+    .checkbox-input {
+        display: none;
+    }
+
+    .text-input:nth-child(4) {
+        margin-bottom: 40px;
+    }
 }
