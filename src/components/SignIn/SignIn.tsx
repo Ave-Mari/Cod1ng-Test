@@ -7,7 +7,7 @@ export const SignIn: React.FC = () => {
   return (
     <section className='signin-section'>
       <Form 
-        headline='Creatu cuenta'
+        headline='Crea tu cuenta'
         button="Crear cuenta"
         link="Iniciar sesión"
     />
