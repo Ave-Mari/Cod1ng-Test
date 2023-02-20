@@ -17,5 +17,4 @@ export const Layout: React.FC = () => {
   )
 }
 
-'https://reactrouter.com/en/main/components/nav-link'
 

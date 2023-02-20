@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Routes, Route, Outlet, BrowserRouter } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 //components
 import { Layout } from './components/Layout/Layout'
 import { Login } from './components/Login/Login'
@@ -7,13 +7,8 @@ import { SignIn }  from './components/SignIn/SignIn'
 
 export const App: React.FC = () => {
   return (
-  
-
-
-
     <main>
         <Routes>
-
         <Route path='/' element={
         <div className='wrapper'>
         <Layout /> 
@@ -24,7 +19,6 @@ export const App: React.FC = () => {
             <Route path='signin' element={<SignIn />} />
             </Route>
         </Routes>
-
         </main>
      
   )
